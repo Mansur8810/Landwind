@@ -1,5 +1,5 @@
 import { createIcons, Menu, ArrowRight, Globe, CircleCheck, Server , MoveRight,UsersRound, MapPinned,ShoppingCart, Quote,Check} from 'lucide';
- 
+
 createIcons({
   icons: {
     Menu,
@@ -15,6 +15,3 @@ createIcons({
     Check,
   }
 });
-import Aos from 'aos';
-Aos.init({
-})
