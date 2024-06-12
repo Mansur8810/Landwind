@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
 </head>
-<body class="overflow-x-clip scroll-smooth antialiased">
+<body class="scroll-smooth antialiased">
   <!--HEADER SECTION START-->
   <header class="container py-4 sticky top-0 z-50 bg-white" data-aos="fade-down" data-aos-duration="1000">
     <nav class="flex justify-between items-center" >
       <a href="/" class=" inline-flex items-center gap-3">
-        <img src="/logo/logo-1.svg" alt="logo">
+        <img src="/logo/logo-1.svg" alt="logo" class=" object-contain">
         <h1 class="font-semibold text-xl">Landwind</h1>
       </a>
-        <ul class="md:flex hidden justify-center items-center gap-8 *:text-gray-700 *:cursor-pointer">
+        <ul class="lg:flex hidden justify-center items-center gap-8 *:text-gray-700 *:cursor-pointer">
           <li><a href="#home" class=" focus:text-primary hover:text-purple-700 transition duration-150 font-medium">Home</a></li>
           <li><a href="#company" class="focus:text-primary hover:text-purple-700 transition duration-150 font-medium">Company</a></li>
           <li><a href="#marketplace" class="focus:text-primary hover:text-purple-700 transition duration-150 font-medium">Marketplace</a></li>
@@ -50,7 +50,7 @@
       <!--HERO SECTION END-->
 
       <!--BRAND SECTION START-->
-      <section class="container md:flex grid grid-cols-2 md:gap-0 gap-x-12 gap-y-6 justify-between items-center my-20" data-aos="zoom-in" data-aos-duration="1000" id="company">
+      <section class="md:flex grid grid-cols-2 md:gap-0 gap-x-12 gap-y-6 justify-between items-center my-20" data-aos="zoom-in" data-aos-duration="1000" id="company">
         <img src="/brands/airbnb.svg" alt="airbnb" class="h-9 opacity-50 hover:opacity-100">
         <img src="/brands/google.svg" alt="google" class="h-9 opacity-50 hover:opacity-100">
         <img src="/brands/microsoft.svg" alt="microsoft" class="h-9 opacity-50 hover:opacity-100">
@@ -61,8 +61,8 @@
       <!--BRAND SECTION END-->
 
       <!--TOOLS START-->
-      <section id="features" class="container py-12">
-        <div class="flex md:flex-row flex-col justify-between items-center w-full">
+      <section id="features" class="py-12">
+        <div class="flex lg:flex-row flex-col justify-between items-center">
           <div class="font-poppins" data-aos="zoom-out-right" data-aos-duration="1000">
             <article class="space-y-10">
               <h1 class="font-extrabold text-3xl">Work with tools you already use</h1>
@@ -93,8 +93,8 @@
       <!--TOOLS END-->
 
       <!---INVEST START-->
-      <section id="marketplace" class="container">
-        <div class="flex md:flex-row flex-col justify-between items-center gap-10">
+      <section id="marketplace">
+        <div class="flex lg:flex-row flex-col justify-between items-center gap-10">
           <div class="max-w-xl"  data-aos="zoom-in-left" data-aos-duration="1000">
             <img src="data-img/img-2.png" alt="invest" class="md:block hidden">
           </div>
@@ -135,7 +135,7 @@
       <!---INVEST END-->
 
       <!--TRUSTED START-->
-      <section class="container my-24">
+      <section class="my-24">
         <div class="flex md:flex-row flex-col justify-between items-center gap-5">
           <div class="space-y-3" data-aos="fade-right" data-aos-duration="1000">
             <article class="space-y-2">
@@ -182,7 +182,7 @@
       <!--TRUSTED END-->
 
      <!--APPLICATION START-->
-      <section class="container max-w-screen-xl px-4 py-8 mx-auto text-center  bg-gray-50" data-aos="fade-up" data-aos-duration="1000">
+      <section class="max-w-screen-xl px-4 py-8 mx-auto text-center  bg-gray-50" data-aos="fade-up" data-aos-duration="1000">
         <article class="max-w-screen-md mx-auto py-12">
           <img src="/icons/quote.svg" alt="quote" class="h-12 mx-auto mb-3">
           <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">"Landwind is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
@@ -191,14 +191,14 @@
      <!--APPLICATION END-->
 
      <!--DESIGNED START-->
-    <section class="container px-4 py-8 mx-auto text-center" id="pricing" >
+    <section class="px-4 py-8 mx-auto text-center" id="pricing" >
       <article class="max-w-screen-md mx-auto py-12 space-y-4" data-aos="fade-down" data-aos-duration="1000">
       <h2 class="text-3xl font-extrabold font-poppins tracking-tight">Designed for business teams like yours</h2>
       <p class="text-gray-500 font-light text-xl">Here at Landwind we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth. </p>
       </article>
   </section>
-  <section class="flex justify-between items-center md:flex-row flex-col gap-8 ">
-    <div class="flex flex-col px-10 py-10 gap-7 max-w-lg mx-auto text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-right" data-aos-duration="1000">
+  <section class="flex justify-between items-center md:flex-row flex-col sm:gap-6 xl:gap-10 lg:space-y-0">
+    <div class="flex flex-col xl:p-8 p-6 gap-7 max-w-lg text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-right" data-aos-duration="1000">
       <h3 class="font-medium text-2xl">Starter</h3>
       <p class="text-lg font-light text-gray-500">Best option for personal use & for your next project.</p>
       <h1 class="text-5xl font-extrabold">$29 <span class="font-normal text-gray-500 text-sm">/month</span></h1>
@@ -209,9 +209,9 @@
         <li><i data-lucide="check" class="text-green-500"></i> premium support: <span class="font-semibold">6 month</span></li>
         <li><i data-lucide="check" class="text-green-500"></i> Free update: <span class="font-semibold">6 month</span></li>
       </ul>
-      <button class="text-white text-start bg-purple-600  py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
+      <button class="text-white text-center bg-purple-600  py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
     </div>
-    <div class="flex flex-col px-10 py-10 gap-7 max-w-lg mx-auto text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-up" data-aos-duration="1000">
+    <div class="flex flex-col xl:p-8 p-6 gap-7 max-w-lg text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-up" data-aos-duration="1000">
       <h3 class="font-medium text-2xl">Company</h3>
       <p class="text-lg font-light text-gray-500">Relevant for multiple users, extended & premium support.</p>
       <h1 class="text-5xl font-extrabold">$99 <span class="font-normal text-gray-500 text-sm">/month</span></h1>
@@ -222,9 +222,9 @@
         <li class="flex gap-2"><i data-lucide="check" class="text-green-500"></i> premium support: <span class="font-semibold">24 month</span></li>
         <li class="flex gap-2"><i data-lucide="check" class="text-green-500"></i> Free update: <span class="font-semibold">24 month</span></li>
       </ul>
-      <button class="text-white text-start bg-purple-600 py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
+      <button class="text-white text-center bg-purple-600 py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
     </div>
-    <div class="flex flex-col px-10 py-10 gap-7 max-w-lg mx-auto text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-left" data-aos-duration="1000">
+    <div class="flex flex-col xl:p-8 p-6 gap-7 max-w-lg text-center text-gray-900 border border-gray-100 shadow rounded-lg" data-aos="fade-left" data-aos-duration="1000">
       <h3 class="font-medium text-2xl">Enterprise</h3>
       <p class="text-lg font-light text-gray-500">Best for large scale uses and extended redistribution rights.</p>
       <h1 class="text-5xl font-extrabold">$499 <span class="font-normal text-gray-500 text-sm">/month</span></h1>
@@ -235,7 +235,7 @@
         <li class="flex gap-2"><i data-lucide="check" class="text-green-500"></i> premium support: <span class="font-semibold">36 month</span></li>
         <li class="flex gap-2"><i data-lucide="check" class="text-green-500"></i> Free update: <span class="font-semibold">36 month</span></li>
       </ul>
-      <button class="text-white text-start bg-purple-600 py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
+      <button class="text-white text-center bg-purple-600 py-2 px-28 hover:bg-purple-700  rounded-lg">Get&nbsp;Started</button>
     </div>
    </section>
   
